@@ -6,6 +6,8 @@ Console.WriteLine("-------------------\n\n");
 
 Console.WriteLine(new Day01().Solve1());
 Console.WriteLine(new Day01().Solve2());
+Console.WriteLine(new Day02().Solve1());
+Console.WriteLine(new Day02().Solve2());
 
 Console.WriteLine("\n\nPress any key to quit...");
 Console.ReadKey();
