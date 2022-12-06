@@ -25,7 +25,7 @@ namespace AdventOfCode2022
         /// <returns></returns>
         protected override string SolveInternal2()
         {
-            for (int i = 0; i < data[0].Length - 3; i++)
+            for (int i = 0; i < data[0].Length - 13; i++)
                 if (data[0].Substring(i, 14).Distinct().Count() == 14)
                     return (i + 14).ToString();
             return "";
