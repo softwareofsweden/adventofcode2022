@@ -16,6 +16,8 @@ Console.WriteLine(new Day05().Solve1());
 Console.WriteLine(new Day05().Solve2());
 Console.WriteLine(new Day06().Solve1());
 Console.WriteLine(new Day06().Solve2());
+Console.WriteLine(new Day07().Solve1());
+Console.WriteLine(new Day07().Solve2());
 
 Console.WriteLine("\n\nPress any key to quit...");
 Console.ReadKey();
