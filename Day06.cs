@@ -11,6 +11,7 @@ namespace AdventOfCode2022
     {
         /// <summary>
         /// How many characters need to be processed before the first start-of-packet marker is detected?
+        /// </summary>
         /// <returns></returns>
         protected override string SolveInternal1()
         {
@@ -22,6 +23,7 @@ namespace AdventOfCode2022
 
         /// <summary>
         /// How many characters need to be processed before the first start-of-packet marker is detected?
+        /// </summary>
         /// <returns></returns>
         protected override string SolveInternal2()
         {

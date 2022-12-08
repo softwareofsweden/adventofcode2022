@@ -34,6 +34,7 @@ namespace AdventOfCode2022
 
         /// <summary>
         /// In how many assignment pairs do the ranges overlap?
+        /// </summary>
         /// <returns></returns>
         protected override string SolveInternal2()
         {

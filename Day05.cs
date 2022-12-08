@@ -46,6 +46,7 @@ namespace AdventOfCode2022
 
         /// <summary>
         /// After the rearrangement procedure completes, what crate ends up on top of each stack?
+        /// </summary>
         /// <returns></returns>
         protected override string SolveInternal2()
         {

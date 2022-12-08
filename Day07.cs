@@ -12,6 +12,7 @@ namespace AdventOfCode2022
         /// <summary>
         /// Find all of the directories with a total size of at most 100000. 
         /// What is the sum of the total sizes of those directories?
+        /// </summary>
         /// <returns></returns>
         protected override string SolveInternal1()
         {
@@ -47,6 +48,7 @@ namespace AdventOfCode2022
         /// <summary>
         /// Find the smallest directory that, if deleted, would free up enough space 
         /// on the filesystem to run the update. What is the total size of that directory?
+        /// </summary>
         /// <returns></returns>
         protected override string SolveInternal2()
         {
