@@ -15,7 +15,7 @@ namespace AdventOfCode2022
 {
     internal class Day12 : Puzzle
     {
-        protected int CountStepsMathod1(int startX, int startY, int endX, int endY, int[,] map, int w, int h, int maxC)
+        protected int CountStepsMethod1(int startX, int startY, int endX, int endY, int[,] map, int w, int h, int maxC)
         {
             var track = new int[w, h];
             track[startX, startY] = 1;
@@ -43,7 +43,7 @@ namespace AdventOfCode2022
             return -1;
         }
 
-        protected int CountStepsMathod2(int startX, int startY, int endX, int endY, int[,] map, int w, int h)
+        protected int CountStepsMethod2(int startX, int startY, int endX, int endY, int[,] map, int w, int h)
         {
             var visited = new SortedSet<Tuple<int, int>>();
             var walkers = new SortedSet<Tuple<int, int>>();
@@ -92,7 +92,7 @@ namespace AdventOfCode2022
         }
 
 
-        protected int CountStepsMathod3(int startX, int startY, int endX, int endY, int[,] map, int w, int h)
+        protected int CountStepsMethod3(int startX, int startY, int endX, int endY, int[,] map, int w, int h)
         {
             var walkers = new HashSet<Tuple<int, int>>();
             walkers.Add(Tuple.Create(startX, startY));
@@ -175,9 +175,9 @@ namespace AdventOfCode2022
                 }
             }
 
-            // return CountStepsMathod1(startX, startY, endX, endY, map, w, h, w * h).ToString();
-            // return CountStepsMathod2(startX, startY, endX, endY, map, w, h).ToString();
-            return CountStepsMathod3(startX, startY, endX, endY, map, w, h).ToString();
+            // return CountStepsMethod1(startX, startY, endX, endY, map, w, h, w * h).ToString();
+            // return CountStepsMethod2(startX, startY, endX, endY, map, w, h).ToString();
+            return CountStepsMethod3(startX, startY, endX, endY, map, w, h).ToString();
         }
 
         /// <summary>
@@ -216,9 +216,9 @@ namespace AdventOfCode2022
             {
                 var startX = startLocation.Item1;
                 var startY = startLocation.Item2;
-                // var steps = CountStepsMathod1(startX, startY, endX, endY, map, w, h, shortest);
-                // var steps = CountStepsMathod2(startX, startY, endX, endY, map, w, h);
-                var steps = CountStepsMathod3(startX, startY, endX, endY, map, w, h);
+                // var steps = CountStepsMethod1(startX, startY, endX, endY, map, w, h, shortest);
+                // var steps = CountStepsMethod2(startX, startY, endX, endY, map, w, h);
+                var steps = CountStepsMethod3(startX, startY, endX, endY, map, w, h);
                 if (steps != -1 && steps < shortest)
                     shortest = steps;
             }
