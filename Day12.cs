@@ -136,6 +136,44 @@ namespace AdventOfCode2022
                 foreach (var newWalker in newWalkers)
                     walkers.Add(newWalker);
                 steps++;
+
+                //Console.Clear();
+                //for (int y = 0; y < h; y++)
+                //{
+                //    for (int x = 0; x < w; x++)
+                //    {
+                //        if (walkers.Contains(Tuple.Create(x, y)))
+                //        {
+                //            Console.ForegroundColor = ConsoleColor.Red;
+                //            Console.Write("*");
+                //        }
+                //        else if (track[x, y ] == 1)
+                //        {
+                //            Console.ForegroundColor = ConsoleColor.DarkGray;
+                //            Console.Write((char)(map[x, y] - 1 + (int)'a'));
+                //        }
+                //        else
+                //        {
+                //            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                //            if (map[x, y] > 2)
+                //                Console.ForegroundColor = ConsoleColor.Yellow;
+                //            if (map[x, y] > 5)
+                //                Console.ForegroundColor = ConsoleColor.Green;
+                //            if (map[x, y] > 10)
+                //                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                //            if (map[x, y] > 14)
+                //                Console.ForegroundColor = ConsoleColor.DarkRed;
+                //            if (map[x, y] > 19)
+                //                Console.ForegroundColor = ConsoleColor.Cyan;
+                //            if (map[x, y] > 23)
+                //                Console.ForegroundColor = ConsoleColor.White;
+                //            Console.Write(((char)(map[x, y] - 1 + (int)'a')).ToString().ToUpper());
+                //        }
+                //    }
+                //    Console.Write("\n");
+                //}
+                //Console.ReadKey();
+
             }
             return -1;
         }
